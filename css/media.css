@@ -36,7 +36,6 @@
     flex-wrap: wrap;
     gap: 30px 200px;
   }
-  
 }
 
 @media (max-width: 1024px) {
@@ -72,6 +71,16 @@
   }
   .main-blog__item-img {
     max-width: 140px;
+  }
+  .footer__inner {
+    margin-bottom: 55px;
+    gap: 0 20px;
+  }
+  .footer__blockquote-text {
+    padding-top: 0;
+  }
+  .footer__contacts {
+    width: 270px;
   }
 }
 
@@ -138,7 +147,6 @@
   }
   .main-blog__item {
     flex-basis: 542px;
-    
   }
   .main-blog__item:nth-child(even) {
     padding-left: 98px;
@@ -211,6 +219,21 @@
   }
   .priorit__text {
     font-size: 16px;
+  }
+  .footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer__products,
+  .footer__company {
+    grid-row: span 3;
+  }
+  .footer__contacts {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .footer__copy {
+    margin-right: 25%;
   }
 }
 @media (max-width: 480px) {
@@ -289,6 +312,51 @@
   .priorit__list {
     flex-direction: column;
   }
+  .footer {
+    padding: 50px 0 10px;
+  }
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__products {
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer__company {
+    margin-right: 45px;
+    padding-right: 20px;
+  }
+
+  .footer__blockquote {
+    width: 100%;
+  }
+  .footer__blockquote-text {
+    margin-bottom: 10px;
+    padding-top: 50px;
+  }
+  .footer__contacts {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .footer-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer__contacts-text {
+    text-align: center;
+  }
+  .footer__nav {
+    flex-wrap: nowrap;
+  }
+  .footer__social {
+    padding-left: 30px;
+  }
+  .footer__copy {
+    margin-right: auto;
+  }
 }
 @media (max-width: 360px) {
   .title {
@@ -334,7 +402,7 @@
     display: block;
     max-width: 270px;
   }
-  .main-blog__item-title{
+  .main-blog__item-title {
     min-height: auto;
   }
   .main-blog__item-author {
@@ -350,7 +418,7 @@
   .mailing__email {
     width: 180px;
   }
-  .priorit__list{
+  .priorit__list {
     gap: 40px;
   }
   .priorit__title {
@@ -358,5 +426,12 @@
   }
   .priorit__text {
     font-size: 10px;
+  }
+  .footer__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__nav-logo {
+    margin-right: 100px;
   }
 }
